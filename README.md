@@ -4,13 +4,12 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 - 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-<!DOCTYPE html>
+- ⚡ <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esteban Oñate - Página Personal</title>
+    <title>Esteban Oñate - Subir Juegos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,6 +28,10 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
         }
         .upload-section {
             background-color: #0000ff;
@@ -38,19 +41,28 @@
         }
         .upload-section input[type="file"] {
             margin-top: 10px;
+            color: #000000;
+        }
+        .upload-section input[type="submit"] {
+            margin-top: 10px;
+            background-color: #ff0000;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Esteban Oñate</h1>
-        <p>Estudiante y entusiasta de los juegos</p>
+        <p>Sube tus juegos aquí</p>
     </header>
     <main>
         <section class="upload-section">
             <h2>Subir Archivos de Juegos</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <input type="file" name="gameFile" id="gameFile">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="gameFile" id="gameFile" required>
                 <br>
                 <input type="submit" value="Subir">
             </form>
@@ -58,8 +70,3 @@
     </main>
 </body>
 </html>
-
-<!---
-firmecomoungato/firmecomoungato is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
